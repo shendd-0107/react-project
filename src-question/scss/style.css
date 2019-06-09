@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html, body, #root, .wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  overflow: auto;
+}
+
+main > .swiper {
+  width: 100%;
+  height: 150px;
+}
+
+main > .list {
+  width: 90%;
+  height: 200px;
+  margin-left: 5%;
+}
+
+main > .list > h3 {
+  width: 90%;
+  height: 40px;
+  margin-left: 5%;
+  line-height: 40px;
+}
+
+main > .list > ul {
+  width: 100%;
+  height: 100%;
+}
+
+main > .list > ul > li {
+  height: 40px;
+  line-height: 40px;
+}
+
+main > .list > ul > li > span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+main > .list > ul > li .success {
+  background: #0f0 !important;
+}
+
+main > .list > ul > li .check {
+  background: #f90;
+}
+
+main > .list > p {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  height: 30px;
+}
+
+main > .list > p > button {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.mask-dialog {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mask-dialog .cont {
+  width: 85%;
+  height: 25%;
+  background: #fff;
+  border: #fff;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header, footer {
+  width: 100%;
+  height: 45px;
+  background: #fcc;
+}

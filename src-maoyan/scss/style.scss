@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+    color:#000;
+}
+html,body,#root,.App{
+    width: 100%;
+    height: 100%;
+
+}
+.App{
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    background: #eee;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: #e54846;
+    display: flex;
+    >span:first-child{
+        width: 50px;
+        height: 100%;
+        line-height: 45px;
+        text-align: center;
+        color:#fff;
+    }
+    >span:last-child{
+        flex:1;
+        color:#fff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 45px;
+    }
+}
+.nav{
+    width: 100%;
+    height: 45px;
+    border-bottom:1px solid #ccc;
+    display: flex;
+    >.city{
+        width: 70px;
+        height: 100%;
+        text-align: center;
+        line-height: 45px;
+    }
+    >span{
+        width: 70px;
+        height: 100%;
+        text-align: center;
+        line-height: 45px;
+
+    }
+    >.tiao{
+        flex:1;
+        display: flex;
+        justify-content: center;
+
+        >a{
+            flex:1;
+            text-align: center;
+            line-height: 45px;
+            text-decoration: none;
+            color:#000;
+        }
+        .active{
+            border-bottom:1px solid #e54846;
+            color:#e54846;
+        }
+    }
+    
+}
+main{
+    flex:1;
+    overflow: auto;
+    h4{
+        margin-left:5%;
+        height: 40px;
+        width: 90%;
+        line-height: 40px;
+        color:#666;
+    }
+    >.ipt{
+        width: 100%;
+        height: 50px;
+        border-bottom:1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        >button{
+            flex:1;
+            bordeR:0;
+            background: #eee;
+            outline:none;
+            color:#e54846;
+            font-size: 18px;
+        }
+        >input{
+            background: #fff;
+            width: 80%;
+            height: 70%;
+            border-radius: 5px;
+            outline: none;
+            padding-left:10px;
+            border:1px solid #ccc;
+            margin-left:10px;
+            border:0
+        }
+    }
+    .item{
+        width: 90%;
+        height: 150px;
+        border-bottom:1px solid #eee;
+        display: flex;
+        margin-left:5%;
+        margin-top:10px;
+        >dt{
+            width: 80px;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >img{
+                width: 100%;
+                height: 100%;
+            }
+            >p{
+                width: 50px;
+                height: 30px;
+                border:0;
+                color:#fff;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 14px;
+            }
+            >.nowgo{
+                background: #e54846;
+            }
+            >.waitgo{
+                background: #09f;
+            }
+
+        }
+        >dd{
+            flex:1;
+            margin:0 10px;
+            display: flex;
+            flex-direction: column;
+            >h4{
+                width: 100%;
+                height: 30px;
+                color:#000;
+            }
+            >p{
+                flex:1;
+                color:#666;
+                font-size: 14px;
+                >b{
+                    color:#f90;
+                }
+            }
+        }
+    }
+    .heng{
+        width: 90%;
+        height: 200px;
+        margin-left:5%;
+        overflow: auto;
+        >.long{
+            display: flex;
+            >dl{
+                width: 130px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                margin-right:10px;
+                >dt{
+                    width: 90px;
+                    height: 130px;
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                >dd{
+                    flex:1;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    >p{
+                        font-size: 14px;
+                        flex:1;
+                    }
+                    >.wantto{
+                        font-size: 12px;
+                        color:#666;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 50px;
+    border-top:1px solid #ccc;
+    display: flex;
+    >a{
+        flex:1;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;
+        color:#000;
+    }
+    .active{
+        color:#e54846;
+    }
+}

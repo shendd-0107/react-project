@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body, #root, .login, .beginlist {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 105%;
+}
+
+.beginlist {
+  display: flex;
+}
+
+.beginlist > .list-left {
+  width: 90px;
+  height: 100%;
+  background: #333;
+}
+
+.beginlist > .list-left > dl {
+  width: 100%;
+  height: 100px;
+}
+
+.beginlist > .list-left > dl > dt {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.beginlist > .list-left > dl > dt > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.beginlist > .list-left > ul {
+  width: 100%;
+}
+
+.beginlist > .list-left > ul > li {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  line-height: 50px;
+}
+
+.beginlist > .list-left > ul > li > a {
+  color: #fff;
+}
+
+.beginlist > .list-left > ul > li > a.active {
+  color: #09f;
+}
+
+.beginlist > .list-right {
+  flex: 1;
+  overflow: auto;
+}
+
+.beginlist > .list-right > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.beginlist > .list-right > div > header {
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #eee;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+.beginlist > .list-right > div > header > h3 {
+  color: #666;
+}
+
+.beginlist > .list-right > div > main {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beginlist > .list-right > div > main > .task-list {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.beginlist > .list-right > div > main > .task-list > .title {
+  width: 90%;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 20px;
+  margin: 5px 0 0 5%;
+  display: flex;
+}
+
+.beginlist > .list-right > div > main > .task-list > .title > p {
+  flex: 1;
+}
+
+.beginlist > .list-right > div > main > .task-list > .title > b {
+  width: 40px;
+  height: 100%;
+  line-height: 45px;
+}
+
+.beginlist > .list-right > div > main > .task-list > .task-main {
+  flex: 1;
+  overflow: auto;
+}
+
+.top {
+  width: 100%;
+  height: 100%;
+  background-image: url("http://s.gxtodo.com/static/img/banner.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 9;
+  position: relative;
+}
+
+.top .top-header {
+  width: 1050px;
+  height: 80px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  display: flex;
+  line-height: 95px;
+}
+
+.top .top-header > span {
+  width: 750px;
+  height: 100%;
+}
+
+.top .top-header > p {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top .top-header > p > .logins > a {
+  background: #fff;
+  color: #000;
+}
+
+.top .top-header > p > .regs > a {
+  background: #25bcf1;
+  color: #fff;
+}
+
+.top .top-header > p > span > a {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.top .top-bottom {
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.top .top-bottom > .bottom-img {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url("../img/bottom.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.top .top-bottom > .bottom-img > p {
+  width: 178px;
+  height: 60px;
+  background: #25bcf1;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 60px;
+  position: absolute;
+  top: 76px;
+  right: 96px;
+}
+
+.top .top-bottom > .bottom-img > p > a {
+  color: #fff;
+}
+
+.login, .regs {
+  display: flex;
+  flex-direction: column;
+}
+
+.login > .login-header, .regs > .login-header {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+}
+
+.login > .login-header > div, .regs > .login-header > div {
+  width: 1045px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.login > .login-header > div > img, .regs > .login-header > div > img {
+  margin-top: 15px;
+}
+
+.login > .login-main, .regs > .login-main {
+  flex: 1;
+  overflow: auto;
+  background: #f0f0f0;
+}
+
+.login > .login-main > .login-content, .regs > .login-main > .login-content {
+  width: 1045px;
+  height: 400px;
+  background: #fff;
+  margin: 80px auto;
+  display: flex;
+}
+
+.login > .login-main > .login-content > .login-content-left, .regs > .login-main > .login-content > .login-content-left {
+  flex: 1;
+}
+
+.login > .login-main > .login-content .login, .regs > .login-main > .login-content .login {
+  width: 400px;
+  background: #fff;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login > .login-main > .login-content .login label, .regs > .login-main > .login-content .login label {
+  margin: 30px 0 0 0;
+}
+
+.login > .login-main > .login-content .login label input, .regs > .login-main > .login-content .login label input {
+  height: 30px;
+  outline: none;
+}
+
+.login > .login-main > .login-content .login button, .regs > .login-main > .login-content .login button {
+  width: 150px;
+  height: 30px;
+  background: #25bcf1;
+  border: 0;
+  margin-left: 26px;
+  margin-top: 30px;
+  color: #fff;
+}

@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body,#root,.login,.beginlist{
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+    width: 100%;
+    height: 105%;
+}
+.beginlist{
+    display: flex;
+    >.list-left{
+        width: 90px;
+        height: 100%;
+        background: #333;
+        >dl{
+            width: 100%;
+            height: 100px;
+            >dt{
+                width: 100%;
+                height:100%;
+                text-align: center;
+                margin-top:20px;
+                >img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+            }
+           
+        }
+        >ul{
+            width: 100%;
+            >li{
+                width: 100%;
+                height: 60px;
+                border-bottom:1px solid #ccc;
+                text-align: center;
+                line-height: 50px;
+                >a{
+                    color:#fff;
+                }
+                >a.active{
+                    color:#09f;
+                }
+            }
+        }
+    }
+    >.list-right{
+        flex:1;
+        overflow: auto;
+        >div{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            >header{
+                width: 100%;
+                height: 50px;
+                border-bottom: 2px solid #eee;
+                line-height: 50px;
+                padding-left:20px;
+                >h3{
+                    color:#666;
+    
+                }
+            }
+            >main{
+                flex:1;
+                overflow: auto;
+                display: flex;
+                flex-wrap: wrap;
+                >.task-list{
+                    width: 50%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    border-right:1px solid #ccc;
+                    border-bottom:1px solid #ccc;
+                    >.title{
+                        width: 90%;
+                        height: 45px;
+                        line-height: 45px;
+                        padding-left:20px;
+                        margin:5px 0 0 5%;
+                        display: flex;
+                        >p{
+                            flex:1;
+                        }
+                        >b{
+                            width: 40px;
+                            height: 100%;
+                            line-height: 45px;
+
+                        }
+                    }
+                    >.task-main{
+                        flex:1;
+                        overflow: auto;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.top{
+    width: 100%;
+    height: 100%;
+    background-image: url("http://s.gxtodo.com/static/img/banner.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    z-index: 9;
+    position: relative;
+    .top-header{
+        width: 1050px;
+        height: 80px;
+        background: rgba(0,0,0,0);
+        position: absolute;
+        top:0;
+        left:50%;
+        z-index: 10;
+        transform: translateX(-50%);
+        display: flex;
+        line-height: 95px;
+        >span{
+            width: 750px;
+            height: 100%;
+        }
+        >p{
+            flex:1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            >.logins>a{
+                background: #fff;
+                color:#000;
+            }
+            >.regs>a{
+                background: #25bcf1;
+                color:#fff;
+            }
+            >span>a{
+                display: inline-block;
+                width: 80px;
+                height: 40px;
+                border-radius: 5px;
+                text-align: center;line-height: 40px;
+            }
+            
+        }
+
+    }
+    .top-bottom{
+        width: 100%;
+        height: 300px;
+        background: #fff;
+        position: absolute;
+        bottom:0;
+        left:50%;
+        z-index:10;
+        transform: translateX(-50%);
+        >.bottom-img{
+            width: 1000px;
+            height: 100%;
+            margin:0 auto;
+            background-image:url("../img/bottom.png");
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            >p{
+                width: 178px;
+                height: 60px;
+                background: #25bcf1;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 60px;
+                position: absolute;
+                top:76px;
+                right:96px;
+                >a{
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+.login,.regs{
+    display: flex;
+    flex-direction: column;
+    >.login-header{
+        width: 100%;
+        height: 70px;
+        background: #fff;
+        >div{
+            width: 1045px;
+            height: 100%;
+            margin:0 auto;
+            >img{
+               margin-top:15px;
+            }
+        }
+    }
+    >.login-main{
+        flex:1;
+        overflow: auto;
+        background: #f0f0f0;
+        >.login-content{
+            width: 1045px;
+            height: 400px;
+            background: #fff;
+            margin:80px auto;
+            display: flex;
+            >.login-content-left{
+                flex:1;
+            }
+            .login{
+                width: 400px;
+                background: #fff;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                label{
+                    margin: 30px 0 0 0;
+                    input{
+                        height: 30px;
+                        outline: none;
+                    } 
+                   
+                }
+                button{
+                    width: 150px;
+                    height: 30px;
+                    background: #25bcf1;
+                    border: 0;
+                    margin-left: 26px;
+                    margin-top: 30px;
+                    color: #fff;
+                }
+            }
+    
+        }
+    }
+}

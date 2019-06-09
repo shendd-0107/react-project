@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+  list-style: none;
+}
+
+html, body, #root, .wrap {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 45px;
+  background: #2873ff;
+  color: #fff;
+  display: flex;
+  line-height: 45px;
+}
+
+header > h3 {
+  width: 80px;
+  height: 100%;
+  color: #fff;
+  line-height: 45px;
+  margin-left: 5%;
+}
+
+header > b {
+  flex: 1;
+  color: #fff;
+  width: 80px;
+  text-align: center;
+}
+
+header > .ipt {
+  width: 170px;
+  height: 70%;
+  border-radius: 5px;
+  background: #fff;
+  margin: 7px 10px 0;
+}
+
+.nav {
+  width: 100%;
+  height: 40px;
+  background: #2873ff;
+  display: flex;
+  position: relative;
+}
+
+.nav > ul {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav > ul > p {
+  color: #fff;
+}
+
+.nav > ul > p > a {
+  color: #fff;
+}
+
+.nav > ul > p a.active {
+  border-bottom: #fff;
+  color: #ff0;
+}
+
+.nav > .btn {
+  width: 50px;
+  line-height: 45px;
+  background-image: url("../img/xia.png");
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position: center center;
+  transition: all 1s;
+}
+
+.nav > .list {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+  display: none;
+}
+
+.nav .dialog {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 1s;
+}
+
+.nav.active .btn {
+  transform: rotateX(180deg);
+}
+
+.nav.active .list {
+  display: block;
+}
+
+.nav.active .dialog {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nav.action {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  width: 100%;
+  height: 150%;
+}
+
+main > .list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+main > .list > .left {
+  flex: 1;
+}
+
+main > .list > .left > div {
+  width: 100%;
+}
+
+main > .list > .left > div > h3 {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #eee;
+  padding-left: 10px;
+}
+
+main > .list > .left > div > li {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+main > .list > .left > div > li > dt {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+main > .list > .left > div > li > dt > img {
+  width: 100%;
+  height: 100%;
+}
+
+main > .list > .left > div > li > dd {
+  flex: 1;
+  line-height: 80px;
+}
+
+main > .list > .right {
+  margin-top: 50px;
+  width: 30px;
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  position: fixed;
+  top: 70px;
+  right: 0;
+}
